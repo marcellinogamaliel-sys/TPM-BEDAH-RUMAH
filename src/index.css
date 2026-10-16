@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased selection:bg-blue-700 selection:text-white;
+    font-family: var(--font-sans);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-blue-700 text-white hover:bg-blue-800 transition-colors duration-200;
+  }
+  .card {
+    @apply bg-white border border-slate-200 shadow-sm rounded-xl;
+  }
+}
+
+/* Custom Leaflet Pin styles */
+.custom-pin,
+.field-pin {
+  background: transparent;
+  border: none;
+}
+
+/* Print Styles */
+@media print {
+  header,
+  aside,
+  nav,
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  body,
+  main {
+    background: white !important;
+    color: black !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+
+  th,
+  td {
+    border: 1px solid #cbd5e1 !important;
+    padding: 6px 8px !important;
+  }
+}

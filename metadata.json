@@ -1,0 +1,6 @@
+{
+  "name": "Sistem Monitoring Bedah Rumah 2026 - TPM",
+  "description": "Sistem monitoring terpadu bedah rumah 2026 untuk TPM Pemberdayaan (Gamaliel Tumiwa) dan TPM Konstruksi (Valerian Poluan).",
+  "requestFramePermissions": ["geolocation", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
