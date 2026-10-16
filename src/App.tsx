@@ -57,7 +57,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans antialiased text-slate-900 selection:bg-blue-700 selection:text-white">
+    <div className="min-h-screen bg-[#F8FAFC] flex flex-col font-sans antialiased text-slate-900 selection:bg-blue-600 selection:text-white">
       {/* Top Header */}
       <Header currentView={currentView} onNavigate={handleNavigate} />
 
